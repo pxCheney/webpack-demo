@@ -11,6 +11,7 @@
     "server": "node server.js",
     "dev-server": "node dev-server.js"
   },
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pxCheney/webpack-demo.git"
