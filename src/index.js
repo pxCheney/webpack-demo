@@ -1,5 +1,4 @@
 import { cube } from './math.js';
-import printMe from './print.js';
 
 function component() {
   var element = document.createElement('pre');
