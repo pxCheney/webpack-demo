@@ -1,5 +1,7 @@
-// ./src/index.js
-import './index.css'
-import createHeader from './header.js'
-const heading = createHeader()
-document.body.append(heading)
+import TestMarkdown from './test.md'
+
+console.log('==============index.js==============');
+console.log(TestMarkdown);
+console.log('====================================');
+
+document.body.innerHTML = TestMarkdown
