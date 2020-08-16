@@ -4,7 +4,7 @@ const marked = require('marked')
 module.exports = source => {
   // 1.
   // source, 加载到的 test.md 模块
-  console.log('MARKDOWN-LOADER-SOURCE', source)
+  // console.log('MARKDOWN-LOADER-SOURCE', source)
 
   // 返回值为最终被打包的内容
   // return 'hello loader'

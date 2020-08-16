@@ -1,5 +1,8 @@
 // ./webpack.config.js
 const path = require('path')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { RemoveCommentsPlugin } = require('./remove-comments-plugin')
 
 module.exports = {
   mode: 'none',
@@ -25,5 +28,13 @@ module.exports = {
       //   ]
       // }
     ]
-  }
+  },
+  plugins: [
+    // new CleanWebpackPlugin(),
+    // new HtmlWebpackPlugin({
+    //   title: 'Webpack - Share - Demo',
+    //   template: './index.html'
+    // }),
+    new RemoveCommentsPlugin({ CustomerPlugin: '自定义插件' })
+  ]
 }
